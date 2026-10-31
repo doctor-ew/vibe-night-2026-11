@@ -1,0 +1,1 @@
+Use the condition supplied in the current inventory. Do not infer hidden damage or mint condition.

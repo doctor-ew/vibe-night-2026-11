@@ -1,0 +1,201 @@
+{
+  "title": "The AI Toy Chest — prompts and demos",
+  "event": "Tuesday, November 10, 2026 · 6:00–8:30 PM · Hudson Grille Midtown, upstairs",
+  "intro": "Pick a toy and make something you want. Copy a prompt, change it to suit you, and see what happens. Pair up if you get stuck. The examples are starting points—your project can be completely different.",
+  "challenges": [
+    {
+      "id": "sidekick",
+      "title": "01 / Your event sidekick",
+      "tool": "ChatGPT dots or Claude Duet; ordinary chat for a one-time fallback",
+      "difficulty": "Beginner",
+      "time": "10–15 minutes",
+      "prompt": "Every Monday at 9:00 AM America/New_York, for the next four weeks, research upcoming Atlanta technology and AI events in the following seven days. My interests are hands-on AI tools, beginner-friendly learning, and meeting local builders. Find three worth considering. For each, include its date, local time, venue, registration link, cost or eligibility restrictions, and one sentence on why it fits. Use organizer pages and link your sources. If you cannot verify three, return fewer and explain the gap. Prepare a concise briefing and ask before adding anything to my calendar, registering, paying, or contacting anyone. Confirm the schedule and end date; if recurring work is unavailable, tell me and produce only this week's briefing.",
+      "result": "A sourced shortlist with dates, venues, registration links, restrictions and reasons. Recurrence only if the product confirms it.",
+      "check": "Open one organizer link. Check the date, venue and eligibility; inspect schedule confirmation.",
+      "links": [
+        [
+          "Prepared briefing",
+          "demos/weekly-briefing.txt"
+        ]
+      ],
+      "sources": [
+        "https://learn.chatgpt.com/docs/dots",
+        "https://learn.chatgpt.com/docs/dots/tasks-and-memory",
+        "https://claude.com/resources/articles/claude-duet"
+      ]
+    },
+    {
+      "id": "skill",
+      "title": "02 / Difficult Email Diplomat",
+      "tool": "Claude Skills, Codex Skills or Gemini Skills; follow the product’s own creation flow",
+      "difficulty": "Beginner",
+      "time": "10–15 minutes",
+      "prompt": "Create a reusable skill called Difficult Email Diplomat. Turn an awkward workplace or customer situation into a calm, firm email of at most 120 words. Ask one focused question if facts needed for the boundary are missing. State the situation without blame, preserve my boundary, and suggest a next step supported by my facts. Return a subject, draft, and a one-sentence check explaining which boundary you preserved. Never invent names, policies, concessions, deadlines, availability, or promises. Draft only; do not send. Save it as a skill using this product's supported method and tell me how to reuse it. First test: My coworker keeps scheduling meetings during my lunch break. Ask them to check my availability and choose a time outside lunch. Use a generic greeting. Then use the same skill for this new situation: A customer wants a full redesign by tomorrow, outside the agreed scope. I cannot commit to that deadline. Ask for their priorities so I can propose a revised scope and timeline. Do not promise a date or free work.",
+      "result": "One reusable instruction set and two short emails for different situations.",
+      "check": "Both drafts keep the requested boundary and avoid invented policies, dates, names or promises.",
+      "links": [
+        [
+          "Download skill ZIP",
+          "demos/email-diplomat.zip"
+        ],
+        [
+          "Read the skill",
+          "demos/email-diplomat/SKILL.md"
+        ],
+        [
+          "Lunch example",
+          "demos/email-lunch.txt"
+        ],
+        [
+          "Customer example",
+          "demos/email-customer.txt"
+        ]
+      ],
+      "sources": [
+        "https://learn.chatgpt.com/docs/build-skills",
+        "https://support.claude.com/en/articles/12512176-what-are-skills",
+        "https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/"
+      ]
+    },
+    {
+      "id": "design",
+      "title": "03 / Your weekend picker",
+      "tool": "Google Stitch",
+      "difficulty": "Beginner",
+      "time": "15–20 minutes",
+      "prompt": "Design a mobile app that suggests weekend activities based on interests, budget per person, and available time. Use labeled sample activities, not live listings. Include filters, activity descriptions, and a Save Idea action. Make it playful. Then add an indoors-only option for rainy days. Show a clickable flow and explain which interactions are simulated.",
+      "result": "A weekend picker with filters and a save-idea flow.",
+      "check": "Choose free and one hour. Do the suggestions fit both limits?",
+      "links": [
+        [
+          "Try the weekend picker",
+          "demos/weekend-picker.html"
+        ]
+      ],
+      "sources": [
+        "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/",
+        "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-updates/"
+      ]
+    },
+    {
+      "id": "learn",
+      "title": "04 / Quantum, explained",
+      "tool": "Gemini Notebook or Gemini study notebooks, depending on account access",
+      "difficulty": "Beginner",
+      "time": "10–15 minutes",
+      "prompt": "Use only these two sources: https://www.ibm.com/think/topics/qubit and https://www.nist.gov/quantum-information-science/quantum-computing-explained . Teach a curious 14-year-old the difference between a bit, a qubit, superposition, and measurement. Start with a short illustrated explanation and state the limits of any analogy. Then create a three-question interactive quiz with feedback after each answer. Include one question about why measurement does not reveal every possible answer at once. Cite the source section for every explanation and answer. If a source cannot be read, tell me instead of filling gaps. Finish by asking which idea I want to explore next.",
+      "result": "A short source-based explanation and a three-question interactive quiz with cited feedback.",
+      "check": "Answer incorrectly, inspect feedback, and open its supporting source passage.",
+      "links": [
+        [
+          "Prepared three-question interactive fallback",
+          "demos/quantum-quiz.html"
+        ]
+      ],
+      "sources": [
+        "https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/",
+        "https://blog.google/innovation-and-ai/products/gemini-app/gemini-study-notebooks/",
+        "https://www.ibm.com/think/topics/qubit",
+        "https://www.nist.gov/quantum-information-science/quantum-computing-explained"
+      ]
+    },
+    {
+      "id": "files",
+      "title": "05 / Sort your weekend ideas",
+      "tool": "Claude Cowork or a rehearsed Computer Use workflow",
+      "difficulty": "Intermediate",
+      "time": "15–20 minutes",
+      "prompt": "Inspect all 15 files in the supplied weekend-kit folder without modifying them. Create a separate activity shortlist that fits the preferences, maximum budget, and time. Use 01-activities.csv for illustrative costs and durations. Flag duplicates, conflicting notes, and missing details. Do not invent live prices or venue availability. Cite input filenames. Open the shortlist and questions, then suggest how to make an interactive weekend picker.",
+      "result": "A clear shortlist with duplicates and unknowns flagged.",
+      "check": "Count six distinct ideas. Remove the repeated walk. Keep venue hours unconfirmed.",
+      "links": [
+        [
+          "Download weekend notes",
+          "demos/weekend-kit.zip"
+        ],
+        [
+          "Example shortlist",
+          "demos/weekend-kit/after/shortlist.csv"
+        ],
+        [
+          "Open questions",
+          "demos/weekend-kit/after/questions.txt"
+        ]
+      ],
+      "sources": [
+        "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork",
+        "https://learn.chatgpt.com/docs/computer-use"
+      ]
+    },
+    {
+      "id": "app",
+      "title": "06 / Build your weekend picker",
+      "tool": "Codex in a working local environment",
+      "difficulty": "Intermediate / advanced",
+      "time": "20–30 minutes",
+      "prompt": "Build a working local weekend-idea app with interests, maximum budget, and available-time filters. Include sample activities with descriptions, illustrative costs per person, and durations. Label them as examples, not live venue listings. Save favorite ideas in browser storage. Show a helpful empty state. Test free activities lasting one hour, save an idea, reload, and confirm the saved state. Then add an indoors-only option for rainy days. Do not publish or connect external services.",
+      "result": "A working activity picker with filters and saved favorites.",
+      "check": "Filter to free and one hour. Save an idea, reload, and confirm its saved state.",
+      "links": [
+        [
+          "Working weekend picker",
+          "demos/weekend-picker.html"
+        ]
+      ],
+      "sources": [
+        "https://learn.chatgpt.com/docs/environments/modes"
+      ]
+    },
+    {
+      "id": "muse",
+      "title": "Try Muse / Your dinner decider",
+      "tool": "Meta Muse",
+      "difficulty": "Beginner",
+      "time": "15–20 minutes",
+      "prompt": "Build a tiny dinner-decider app I can use in a browser. My sample ingredients are pasta, rice, eggs, tomatoes, bread, and vegetables. Let me choose 10, 20, or 30 minutes and press a button for a meal idea using those ingredients. Add a Pick Something Else button. Use clearly labeled illustrative meal ideas and times, not nutrition or dietary claims. Then add a vegetarian-only option. Show me the working app, explain how to open it again, and tell me what is saved. Do not shop, buy anything, or connect my accounts.",
+      "result": "A small meal-idea app you can open, click, and change by describing what you want.",
+      "check": "Change the time limit. Press the button again. Ask for a vegetarian option and check whether it works.",
+      "links": [
+        [
+          "Try the local dinner-picker example",
+          "demos/dinner-picker.html"
+        ]
+      ],
+      "sources": [
+        "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+        "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse"
+      ]
+    }
+  ],
+  "bonuses": [
+    {
+      "id": "mods",
+      "title": "Advanced bonus / Claude Code mod",
+      "prompt": "Create a Claude Code mod that adds a small pane beside the conversation showing the number of completed tool calls in this session. Start at zero. Increment once per completed tool call, including failed calls, and keep the count visible while I keep working. Use the type declarations and supported mod API from my installed Claude Code version; look up every event and UI method instead of guessing. Do not change permission decisions, rewrite prompts, log file contents, or make network requests. Show me the generated files and explain how to disable the mod. Demonstrate the display before and after reading two harmless sample files.",
+      "result": "Proposed tool-call count pane. Not built or rehearsed in Claude Code during preparation.",
+      "sources": [
+        "https://claude.com/resources/articles/claude-code-mods",
+        "https://code.claude.com/docs/en/plugins/mods/overview"
+      ]
+    },
+    {
+      "id": "rea",
+      "title": "Advanced bonus / Reverse Engineer Anything",
+      "prompt": "Use REA to inspect the installed open-source sirv package in this deck's node_modules directory. Analyze package.json and build.mjs as static text; do not execute the package. Explain in plain English how the package constructs possible filenames for an extensionless request. Show the exact source lines and file hash supporting the explanation. Distinguish observed syntax, inferred behavior, and unknown runtime results. State which files and dependencies were outside the analysis. Do not claim a security audit or absence of network activity. Keep the explanation short enough for a three-minute demonstration.",
+      "result": "Completed static inspection of two selected sirv package files; inferred filename-candidate behavior. Runtime behavior remains unknown.",
+      "sources": [
+        "https://github.com/morluto/rea"
+      ],
+      "links": [
+        [
+          "Saved Evidence",
+          "demos/rea-public-summary.json"
+        ],
+        [
+          "Source excerpt",
+          "demos/rea-source-excerpt.txt"
+        ]
+      ]
+    }
+  ]
+}

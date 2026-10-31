@@ -1,0 +1,6 @@
+Illustrative output for the supplied sample, not a claimed Cowork run.
+Three distinct figures. The droid purchase note is a duplicate, not a fourth figure. [03-duplicate-purchase.txt;13-count-check.txt]
+The old droid packaging status conflicts with the current inventory; use the current yes. [01-current-inventory.csv;02-old-list.txt;05-droid-note.txt;14-source-priority.txt]
+Does the commando have its original packaging? Unknown. [06-commando-note.txt;12-missing-info.txt]
+Prices are fictional purchases, not market valuations. [07-sample-receipt.csv;08-prices.txt]
+No individual photo filenames were provided. [09-photo-notes.txt]

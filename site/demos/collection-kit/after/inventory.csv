@@ -1,0 +1,4 @@
+name,franchise,condition,original_packaging,sample_purchase_price,source
+Orange-suited explorer,Space adventure,Played with,no,25,01-current-inventory.csv;04-explorer-note.txt;07-sample-receipt.csv
+Vintage space droid,Space adventure,Good,yes,35,01-current-inventory.csv;05-droid-note.txt;07-sample-receipt.csv
+Masked commando,Action heroes,Good,unknown,30,01-current-inventory.csv;06-commando-note.txt;07-sample-receipt.csv

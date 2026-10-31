@@ -1,0 +1,12 @@
+Prepared with the same Difficult Email Diplomat skill by Codex for Vibe Night.
+Input: A customer wants a full redesign by tomorrow, outside the agreed scope. I cannot commit to that deadline. Ask them to send their top priorities so I can propose a revised scope and timeline. Do not promise a date or free work. Use a generic greeting.
+
+Subject: Scope and timing for the redesign
+
+Hi,
+
+The full redesign goes beyond our agreed scope, and I can’t commit to completing it by tomorrow. Please send your top priorities so I can propose a revised scope and timeline for your review.
+
+Once we agree on those, we can confirm the next steps.
+
+Check: The draft declines tomorrow’s deadline and requests priorities without promising free work, a delivery date, or approval.

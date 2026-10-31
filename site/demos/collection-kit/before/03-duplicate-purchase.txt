@@ -1,0 +1,1 @@
+The space droid listed here is the same droid as id droid in the current inventory. Do not count it twice.

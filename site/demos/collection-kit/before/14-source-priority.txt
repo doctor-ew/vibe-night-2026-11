@@ -1,0 +1,1 @@
+01-current-inventory.csv is authoritative. The old list is historical, not a second collection.

@@ -1,0 +1,30 @@
+sirv 3.0.2 — selected installed source excerpt
+MIT license declared in package.json.
+Static inspection; no request execution. Dependencies and three unselected files remain outside the analysis.
+Source SHA-256: b5b9c79b302712b2ac0d0ef88ce170588c08f6ad1e6443d47c60996f65c5b0fb
+
+15: function toAssume(uri, extns) {
+16: 	let i=0, x, len=uri.length - 1;
+17: 	if (uri.charCodeAt(len) === 47) {
+18: 		uri = uri.substring(0, len);
+19: 	}
+20: 
+21: 	let arr=[], tmp=`${uri}/index`;
+22: 	for (; i < extns.length; i++) {
+23: 		x = extns[i] ? `.${extns[i]}` : '';
+24: 		if (uri) arr.push(uri + x);
+25: 		arr.push(tmp + x);
+26: 	}
+27: 
+28: 	return arr;
+121: export default function (dir, opts={}) {
+122: 	dir = resolve(dir || '.');
+123: 
+124: 	let isNotFound = opts.onNoMatch || is404;
+125: 	let setHeaders = opts.setHeaders || noop;
+126: 
+127: 	let extensions = opts.extensions || ['html', 'htm'];
+128: 	let gzips = opts.gzip && extensions.map(x => `${x}.gz`).concat('gz');
+129: 	let brots = opts.brotli && extensions.map(x => `${x}.br`).concat('br');
+
+Inference: the default source constructs candidate filenames using html/htm extensions and index variants. This is not proof of a live response or a security audit.
