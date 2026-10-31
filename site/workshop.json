@@ -1,14 +1,14 @@
 {
   "title": "The AI Toy Chest — prompts and demos",
   "event": "Tuesday, November 10, 2026 · 6:00–8:30 PM · Hudson Grille Midtown, upstairs",
-  "intro": "Pick a toy and make something you want. Copy a prompt, change it to suit you, and see what happens. Pair up if you get stuck. The examples are starting points—your project can be completely different.",
+  "intro": "Tonight’s focus: ChatGPT dots and Meta Muse as personal assistants, then Google Stitch for a playful game prototype. Pick one project or follow along with a partner. Drew’s Android X-Wing/REA story is an optional bonus if time permits.",
   "challenges": [
     {
       "id": "sidekick",
-      "title": "01 / Your event sidekick",
-      "tool": "ChatGPT dots or Claude Duet; ordinary chat for a one-time fallback",
+      "title": "01 / ChatGPT dots — your event scout",
+      "tool": "ChatGPT dots",
       "difficulty": "Beginner",
-      "time": "10–15 minutes",
+      "time": "15–20 minutes",
       "prompt": "Every Monday at 9:00 AM America/New_York, for the next four weeks, research upcoming Atlanta technology and AI events in the following seven days. My interests are hands-on AI tools, beginner-friendly learning, and meeting local builders. Find three worth considering. For each, include its date, local time, venue, registration link, cost or eligibility restrictions, and one sentence on why it fits. Use organizer pages and link your sources. If you cannot verify three, return fewer and explain the gap. Prepare a concise briefing and ask before adding anything to my calendar, registering, paying, or contacting anyone. Confirm the schedule and end date; if recurring work is unavailable, tell me and produce only this week's briefing.",
       "result": "A sourced shortlist with dates, venues, registration links, restrictions and reasons. Recurrence only if the product confirms it.",
       "check": "Open one organizer link. Check the date, venue and eligibility; inspect schedule confirmation.",
@@ -20,9 +20,7 @@
       ],
       "sources": [
         "https://learn.chatgpt.com/docs/dots",
-        "https://learn.chatgpt.com/docs/dots/tasks-and-memory",
-        "https://claude.com/resources/articles/claude-duet",
-        "https://learn.chatgpt.com/docs/dots"
+        "https://learn.chatgpt.com/docs/dots/tasks-and-memory"
       ],
       "access": [
         {
@@ -32,20 +30,9 @@
           "steps": [
             "Sign in to ChatGPT in a desktop browser, desktop app, or the latest mobile app. Mobile web does not support dot setup.",
             "Open dots, follow the introduction, and name your dot. App connections are optional for this public-event exercise.",
-            "Paste the prompt below. Check that it confirms the recurring schedule; otherwise use a one-time briefing."
+            "Paste the prompt, review one source, then change an interest. Check the schedule confirmation before expecting recurring briefings."
           ],
           "guide": "https://learn.chatgpt.com/docs/dots/getting-started"
-        },
-        {
-          "name": "Claude Duet — join the waitlist",
-          "url": "https://claude.com/product/claude-duet",
-          "needs": "US research preview; Pro, Max, or Ultra account and a waitlist invitation. Joining does not grant immediate access.",
-          "steps": [
-            "Select Join the waitlist and use the email address on your Claude account.",
-            "Once invited, follow the invitation on your phone, install the app, and sign in.",
-            "Paste the prompt after setup. For tonight, use ordinary chat if you are still waiting."
-          ],
-          "guide": "https://support.claude.com/en/articles/17631495-get-started-with-claude-duet"
         }
       ],
       "fallback": {
@@ -54,6 +41,128 @@
         "label": "Open ChatGPT"
       }
     },
+    {
+      "id": "muse",
+      "title": "02 / Meta Muse — your weekend assistant",
+      "tool": "Meta Muse",
+      "difficulty": "Beginner",
+      "time": "15–20 minutes",
+      "prompt": "Help me plan an enjoyable Saturday afternoon in Atlanta for two adults. We have four hours and a maximum budget of $40 per person, excluding travel. We like vintage toys, casual food, and discovering something new. Ask one question if you need a preference before starting. Research two possible plans, including an indoor option. For each stop, link an official source and check opening hours, price, booking requirements, and travel assumptions; mark anything you cannot verify. Recommend one plan and explain the tradeoff. Draft the itinerary for me to review. Do not book, buy, send messages, connect accounts, or change my calendar. After you show the first version, I will say: It might rain and we only have two hours now. Revise the plan and explain what changed. If ongoing follow-up is supported, explain what you would need and ask before setting it up.",
+      "result": "Two sourced options and a revised itinerary when your time and weather constraints change.",
+      "check": "Open one official source. Check that the revised plan fits two hours and does not silently invent prices or travel times.",
+      "links": [
+        [
+          "Assistant planning checklist",
+          "demos/assistant-checklist.txt"
+        ]
+      ],
+      "sources": [
+        "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+        "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse"
+      ],
+      "access": [
+        {
+          "name": "Meta Muse",
+          "url": "https://muse.ai/",
+          "needs": "US rollout. Basic use is free, with subscriptions for more usage; availability and limits can vary.",
+          "steps": [
+            "Open Muse in a browser, or use its official mobile app.",
+            "Log in or create an account with your email or mobile number, following the on-screen steps.",
+            "Paste the weekend-assistant prompt. Once you see a plan, ask for the rain/two-hour revision. No email or payment connection is needed."
+          ],
+          "guide": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/"
+        }
+      ],
+      "fallback": {
+        "text": "Use the prompt in an ordinary chat you already have, or work through the planning checklist with a partner. This does not demonstrate Muse or background work.",
+        "url": "demos/assistant-checklist.txt",
+        "label": "Open the checklist"
+      }
+    },
+    {
+      "id": "design",
+      "title": "03 / Google Stitch — Toy Chest Match",
+      "tool": "Google Stitch",
+      "difficulty": "Beginner",
+      "time": "20–30 minutes",
+      "prompt": "Design a playful, mobile-friendly memory matching game called Toy Chest Match, inspired by a 1980s arcade. Use six pairs of generic toy symbols: rocket, robot, alien, planet, joystick, and lightning bolt. Create a start screen, a board with twelve face-down cards, an attempts counter, a matches counter, and a win screen with Play Again. Make the cards large enough to tap and readable on a phone. Connect the screens into a clickable prototype. Show a correct match, a mismatch, and a completed game. Then change the theme from space toys to dinosaurs and add an easier three-pair mode. Explain which interactions are simulated and which actually run. Do not present mock counters or linked screens as a fully implemented matching engine. If running game logic needs another tool or an export step, tell me what remains.",
+      "result": "A game design and clickable flow with start, play, and win states; identify any game logic still to implement.",
+      "check": "Try a match, a mismatch, and Play Again. Does the prototype behave, or is it demonstrating a linked-screen simulation?",
+      "links": [
+        [
+          "Play the prepared matching game",
+          "demos/toy-chest-match.html"
+        ]
+      ],
+      "sources": [
+        "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/",
+        "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-updates/"
+      ],
+      "access": [
+        {
+          "name": "Google Stitch",
+          "url": "https://stitch.withgoogle.com/",
+          "needs": "Browser and Google sign-in. Use the account access and limits shown by Stitch.",
+          "steps": [
+            "Open Stitch and sign in.",
+            "Paste the Toy Chest Match prompt. Design the start, play, and win screens, then connect the prototype.",
+            "Try it on your phone. Ask for the dinosaur theme and easy mode; check which interactions are real."
+          ],
+          "guide": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-gemini-3/"
+        }
+      ],
+      "fallback": {
+        "text": "Play the prepared browser game. It is a working Vibe Night example, not a Stitch generation or export. You can sketch your own changes while a partner operates Stitch.",
+        "url": "demos/toy-chest-match.html",
+        "label": "Play Toy Chest Match"
+      }
+    }
+  ],
+  "bonuses": [
+    {
+      "id": "rea",
+      "title": "If time permits / Drew’s Android X-Wing + REA demo",
+      "prompt": "Presenter story outline: show the Android X-Wing game before your change, explain in plain language what you wanted to change, show the REA evidence that informed your work, then show the changed behavior. Distinguish the observations, your interpretation, and the implementation. State what you tested and what remains unknown. Specific game changes and before/after evidence will come from Drew’s own demonstration.",
+      "result": "A short before/after story from Drew’s own game modification; no specific modification is claimed in this guide.",
+      "sources": [
+        "https://github.com/morluto/rea"
+      ],
+      "links": [
+        [
+          "REA repository and current setup",
+          "https://github.com/morluto/rea"
+        ],
+        [
+          "Separate static REA example: sirv source excerpt",
+          "demos/rea-source-excerpt.txt"
+        ]
+      ],
+      "access": [
+        {
+          "name": "Reverse Engineer Anything — official repository",
+          "url": "https://github.com/morluto/rea",
+          "needs": "Optional presenter demonstration; no audience installation required. For your own experiments, follow REA setup and choose the analysis provider appropriate to your target.",
+          "steps": [
+            "Open the official repository for current setup and examples.",
+            "For this bonus, follow Drew’s before/after demonstration or recording.",
+            "For your own project later, set up REA with your coding agent and follow the target-specific guide."
+          ],
+          "guide": "https://github.com/morluto/rea"
+        }
+      ],
+      "fallback": {
+        "text": "Skip this bonus if time or demo access is short. The separate sirv excerpt explains static analysis; it is not evidence about X-Wing.",
+        "url": "demos/rea-source-excerpt.txt",
+        "label": "Read the separate example"
+      },
+      "tool": "Presenter demonstration · Reverse Engineer Anything",
+      "difficulty": "Optional / advanced",
+      "time": "Up to 5 minutes",
+      "check": "Can the audience see the change and understand what REA helped you discover?"
+    }
+  ],
+  "access_checked": "October 31, 2026",
+  "extras": [
     {
       "id": "skill",
       "title": "02 / Difficult Email Diplomat",
@@ -125,44 +234,6 @@
         "text": "Paste the skill instructions into ordinary chat for each test. This practices the workflow without claiming the instructions were saved as a reusable skill.",
         "url": "demos/email-diplomat/SKILL.md",
         "label": "Read the instructions"
-      }
-    },
-    {
-      "id": "design",
-      "title": "03 / Your weekend picker",
-      "tool": "Google Stitch",
-      "difficulty": "Beginner",
-      "time": "15–20 minutes",
-      "prompt": "Design a mobile app that suggests weekend activities based on interests, budget per person, and available time. Use labeled sample activities, not live listings. Include filters, activity descriptions, and a Save Idea action. Make it playful. Then add an indoors-only option for rainy days. Show a clickable flow and explain which interactions are simulated.",
-      "result": "A weekend picker with filters and a save-idea flow.",
-      "check": "Choose free and one hour. Do the suggestions fit both limits?",
-      "links": [
-        [
-          "Try the weekend picker",
-          "demos/weekend-picker.html"
-        ]
-      ],
-      "sources": [
-        "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/",
-        "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-updates/"
-      ],
-      "access": [
-        {
-          "name": "Google Stitch",
-          "url": "https://stitch.withgoogle.com/",
-          "needs": "Browser and Google sign-in. Use the account access and limits shown by Stitch.",
-          "steps": [
-            "Open Stitch and sign in.",
-            "Start a design with the weekend-picker prompt below.",
-            "Ask for the rainy-day change, then test the clickable flow."
-          ],
-          "guide": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-gemini-3/"
-        }
-      ],
-      "fallback": {
-        "text": "Try the prepared weekend picker in your browser. It is a local example, not your own Stitch generation.",
-        "url": "demos/weekend-picker.html",
-        "label": "Try the example"
       }
     },
     {
@@ -300,46 +371,6 @@
       }
     },
     {
-      "id": "muse",
-      "title": "Try Muse / Your dinner decider",
-      "tool": "Meta Muse",
-      "difficulty": "Beginner",
-      "time": "15–20 minutes",
-      "prompt": "Build a tiny dinner-decider app I can use in a browser. My sample ingredients are pasta, rice, eggs, tomatoes, bread, and vegetables. Let me choose 10, 20, or 30 minutes and press a button for a meal idea using those ingredients. Add a Pick Something Else button. Use clearly labeled illustrative meal ideas and times, not nutrition or dietary claims. Then add a vegetarian-only option. Show me the working app, explain how to open it again, and tell me what is saved. Do not shop, buy anything, or connect my accounts.",
-      "result": "A small meal-idea app you can open, click, and change by describing what you want.",
-      "check": "Change the time limit. Press the button again. Ask for a vegetarian option and check whether it works.",
-      "links": [
-        [
-          "Try the local dinner-picker example",
-          "demos/dinner-picker.html"
-        ]
-      ],
-      "sources": [
-        "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
-        "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse"
-      ],
-      "access": [
-        {
-          "name": "Meta Muse",
-          "url": "https://muse.ai/",
-          "needs": "US rollout. Basic use is free, with subscriptions for more usage; availability and limits can vary.",
-          "steps": [
-            "Open Muse in a browser, or use its official mobile app.",
-            "Log in or create an account with your email or mobile number, following the on-screen steps.",
-            "Paste the dinner-decider prompt. You do not need to connect email, shopping, or payment accounts for this exercise."
-          ],
-          "guide": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/"
-        }
-      ],
-      "fallback": {
-        "text": "Use the prepared dinner picker, or ask another app-building assistant to implement the same prompt.",
-        "url": "demos/dinner-picker.html",
-        "label": "Open the dinner picker"
-      }
-    }
-  ],
-  "bonuses": [
-    {
       "id": "mods",
       "title": "Advanced bonus / Claude Code mod",
       "prompt": "Create a Claude Code mod that adds a small pane beside the conversation showing the number of completed tool calls in this session. Start at zero. Increment once per completed tool call, including failed calls, and keep the count visible while I keep working. Use the type declarations and supported mod API from my installed Claude Code version; look up every event and UI method instead of guessing. Do not change permission decisions, rewrite prompts, log file contents, or make network requests. Show me the generated files and explain how to disable the mod. Demonstrate the display before and after reading two harmless sample files.",
@@ -366,44 +397,6 @@
         "url": "https://code.claude.com/docs/en/plugins/mods/overview",
         "label": "Read the walkthrough"
       }
-    },
-    {
-      "id": "rea",
-      "title": "Advanced bonus / Reverse Engineer Anything",
-      "prompt": "Use REA to inspect the installed open-source sirv package in this deck's node_modules directory. Analyze package.json and build.mjs as static text; do not execute the package. Explain in plain English how the package constructs possible filenames for an extensionless request. Show the exact source lines and file hash supporting the explanation. Distinguish observed syntax, inferred behavior, and unknown runtime results. State which files and dependencies were outside the analysis. Do not claim a security audit or absence of network activity. Keep the explanation short enough for a three-minute demonstration.",
-      "result": "Completed static inspection of two selected sirv package files; inferred filename-candidate behavior. Runtime behavior remains unknown.",
-      "sources": [
-        "https://github.com/morluto/rea"
-      ],
-      "links": [
-        [
-          "Saved Evidence",
-          "demos/rea-public-summary.json"
-        ],
-        [
-          "Source excerpt",
-          "demos/rea-source-excerpt.txt"
-        ]
-      ],
-      "access": [
-        {
-          "name": "Reverse Engineer Anything — official repository",
-          "url": "https://github.com/morluto/rea",
-          "needs": "A coding agent and local Node/npm tooling. This static JavaScript exercise does not need a native decompiler.",
-          "steps": [
-            "Open the repository README and follow its current agent setup instructions.",
-            "Restart your agent after setup so it can see REA.",
-            "Use the prompt only in an environment with the sample package installed, or inspect the prepared excerpt below."
-          ],
-          "guide": "https://github.com/morluto/rea"
-        }
-      ],
-      "fallback": {
-        "text": "Read the saved source excerpt and its limitations; no installation is needed to follow the explanation.",
-        "url": "demos/rea-source-excerpt.txt",
-        "label": "Read the excerpt"
-      }
     }
-  ],
-  "access_checked": "October 31, 2026"
+  ]
 }

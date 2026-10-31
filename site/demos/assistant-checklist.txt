@@ -1,0 +1,10 @@
+Prepared workshop checklist — not a Muse run or itinerary.
+
+1. What did you ask the assistant to own?
+2. What dates, time window, interests, and budget did you give?
+3. Does each recommendation link an official source?
+4. Which hours, prices, or travel times are still unknown?
+5. Change one constraint: rain, two hours, or a different interest.
+6. Did the assistant revise its answer rather than ignore the change?
+7. Was recurring work actually confirmed, or only suggested?
+8. What decision still needs your approval?
