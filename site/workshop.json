@@ -21,8 +21,38 @@
       "sources": [
         "https://learn.chatgpt.com/docs/dots",
         "https://learn.chatgpt.com/docs/dots/tasks-and-memory",
-        "https://claude.com/resources/articles/claude-duet"
-      ]
+        "https://claude.com/resources/articles/claude-duet",
+        "https://learn.chatgpt.com/docs/dots"
+      ],
+      "access": [
+        {
+          "name": "ChatGPT dots",
+          "url": "https://chatgpt.com/",
+          "needs": "Personal plans: Pro 100, Pro 200, or Pro 500; age 18+, outside the EEA, UK, and Switzerland. Business Premium and Enterprise are also rolling out; Enterprise needs admin enablement. An eligible plan may still be waiting for rollout.",
+          "steps": [
+            "Sign in to ChatGPT in a desktop browser, desktop app, or the latest mobile app. Mobile web does not support dot setup.",
+            "Open dots, follow the introduction, and name your dot. App connections are optional for this public-event exercise.",
+            "Paste the prompt below. Check that it confirms the recurring schedule; otherwise use a one-time briefing."
+          ],
+          "guide": "https://learn.chatgpt.com/docs/dots/getting-started"
+        },
+        {
+          "name": "Claude Duet — join the waitlist",
+          "url": "https://claude.com/product/claude-duet",
+          "needs": "US research preview; Pro, Max, or Ultra account and a waitlist invitation. Joining does not grant immediate access.",
+          "steps": [
+            "Select Join the waitlist and use the email address on your Claude account.",
+            "Once invited, follow the invitation on your phone, install the app, and sign in.",
+            "Paste the prompt after setup. For tonight, use ordinary chat if you are still waiting."
+          ],
+          "guide": "https://support.claude.com/en/articles/17631495-get-started-with-claude-duet"
+        }
+      ],
+      "fallback": {
+        "text": "Open ChatGPT or Claude in a normal chat, paste the prompt, and request only this week’s briefing. This does not create an always-on assistant or a schedule.",
+        "url": "https://chatgpt.com/",
+        "label": "Open ChatGPT"
+      }
     },
     {
       "id": "skill",
@@ -55,7 +85,47 @@
         "https://learn.chatgpt.com/docs/build-skills",
         "https://support.claude.com/en/articles/12512176-what-are-skills",
         "https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/"
-      ]
+      ],
+      "access": [
+        {
+          "name": "Claude Skills — easiest ZIP route",
+          "url": "https://claude.ai/customize/skills",
+          "needs": "Claude account; file creation/code execution enabled. Organization policy can restrict skill creation.",
+          "steps": [
+            "Download the skill ZIP linked below.",
+            "In Claude, open Customize > Skills, then + > Create skill > Upload a skill. Upload the ZIP and enable the skill.",
+            "Start a new conversation, ask Claude to use Difficult Email Diplomat, and try the two situations in the prompt."
+          ],
+          "guide": "https://support.claude.com/en/articles/12512180-use-skills-in-claude"
+        },
+        {
+          "name": "Gemini Skills",
+          "url": "https://gemini.google.com/",
+          "needs": "Google account; Skills is rolling out. The announcement lists Google AI subscription tiers and age 18+; Workspace availability can differ.",
+          "steps": [
+            "Sign in to Gemini and paste the prompt below. Ask Gemini to save the instructions as a skill.",
+            "Once created, type / and the skill name to reuse it.",
+            "If Skills is unavailable, paste the same instructions at the start of each test conversation."
+          ],
+          "guide": "https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/"
+        },
+        {
+          "name": "Codex Skills",
+          "url": "https://learn.chatgpt.com/docs/app",
+          "needs": "ChatGPT desktop app with Codex access; a local folder for the skill.",
+          "steps": [
+            "Download the desktop app from this official guide and sign in.",
+            "Choose Codex, open a local folder, and ask it to create the reusable skill from the prompt below.",
+            "Follow its supported installation steps, then test the skill in another conversation."
+          ],
+          "guide": "https://learn.chatgpt.com/docs/build-skills"
+        }
+      ],
+      "fallback": {
+        "text": "Paste the skill instructions into ordinary chat for each test. This practices the workflow without claiming the instructions were saved as a reusable skill.",
+        "url": "demos/email-diplomat/SKILL.md",
+        "label": "Read the instructions"
+      }
     },
     {
       "id": "design",
@@ -75,7 +145,25 @@
       "sources": [
         "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/",
         "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-updates/"
-      ]
+      ],
+      "access": [
+        {
+          "name": "Google Stitch",
+          "url": "https://stitch.withgoogle.com/",
+          "needs": "Browser and Google sign-in. Use the account access and limits shown by Stitch.",
+          "steps": [
+            "Open Stitch and sign in.",
+            "Start a design with the weekend-picker prompt below.",
+            "Ask for the rainy-day change, then test the clickable flow."
+          ],
+          "guide": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-gemini-3/"
+        }
+      ],
+      "fallback": {
+        "text": "Try the prepared weekend picker in your browser. It is a local example, not your own Stitch generation.",
+        "url": "demos/weekend-picker.html",
+        "label": "Try the example"
+      }
     },
     {
       "id": "learn",
@@ -97,7 +185,36 @@
         "https://blog.google/innovation-and-ai/products/gemini-app/gemini-study-notebooks/",
         "https://www.ibm.com/think/topics/qubit",
         "https://www.nist.gov/quantum-information-science/quantum-computing-explained"
-      ]
+      ],
+      "access": [
+        {
+          "name": "Gemini Notebook",
+          "url": "https://notebook.google/",
+          "needs": "Google account. A school or work account may need administrator access; feature limits vary.",
+          "steps": [
+            "Open the notebook site and sign in. NotebookLM links may redirect to Gemini Notebook.",
+            "Create a notebook and add the IBM and NIST source links from the prompt.",
+            "Paste the prompt in the notebook conversation; use the study or quiz tools offered by your account."
+          ],
+          "guide": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/"
+        },
+        {
+          "name": "Gemini — notebook alternative",
+          "url": "https://gemini.google.com/",
+          "needs": "Google account; notebook access depends on the account.",
+          "steps": [
+            "Sign in and open or create a notebook if that option is available.",
+            "Add the two sources, then paste the prompt.",
+            "If notebooks are unavailable, use the prepared interactive lesson below."
+          ],
+          "guide": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/"
+        }
+      ],
+      "fallback": {
+        "text": "Open the prepared three-question lesson. It works in your browser without a Gemini account.",
+        "url": "demos/quantum-quiz.html",
+        "label": "Open the lesson"
+      }
     },
     {
       "id": "files",
@@ -125,7 +242,25 @@
       "sources": [
         "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork",
         "https://learn.chatgpt.com/docs/computer-use"
-      ]
+      ],
+      "access": [
+        {
+          "name": "Claude Cowork",
+          "url": "https://claude.com/download",
+          "needs": "Paid Claude plan. Desktop is the practical route for working with a local sample folder; organization settings may restrict access.",
+          "steps": [
+            "Download or update Claude Desktop and sign in.",
+            "Download the weekend-notes ZIP below and unzip it into a separate sample folder.",
+            "Start a task from the message box; select Cowork if your app shows a Chat/Cowork selector. Make the sample folder available, then paste the prompt."
+          ],
+          "guide": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork"
+        }
+      ],
+      "fallback": {
+        "text": "Open the example shortlist and questions, or upload the sample files to a chat tool that supports attachments. That does not demonstrate computer control.",
+        "url": "demos/weekend-kit/after/shortlist.csv",
+        "label": "Open the example shortlist"
+      }
     },
     {
       "id": "app",
@@ -144,7 +279,25 @@
       ],
       "sources": [
         "https://learn.chatgpt.com/docs/environments/modes"
-      ]
+      ],
+      "access": [
+        {
+          "name": "Codex — desktop setup",
+          "url": "https://learn.chatgpt.com/docs/app",
+          "needs": "ChatGPT desktop app with Codex access; a laptop or desktop and a folder for the project.",
+          "steps": [
+            "Use Download ChatGPT on the official guide, install the app, and sign in with your ChatGPT account.",
+            "Choose Codex, open a new local project folder, and start a new chat.",
+            "Paste the prompt below. Ask Codex to set up any missing project tools and show you how to open the result locally."
+          ],
+          "guide": "https://learn.chatgpt.com/docs/app"
+        }
+      ],
+      "fallback": {
+        "text": "Try the working example or pair with someone who already has Codex ready.",
+        "url": "demos/weekend-picker.html",
+        "label": "Try the example"
+      }
     },
     {
       "id": "muse",
@@ -164,7 +317,25 @@
       "sources": [
         "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
         "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse"
-      ]
+      ],
+      "access": [
+        {
+          "name": "Meta Muse",
+          "url": "https://muse.ai/",
+          "needs": "US rollout. Basic use is free, with subscriptions for more usage; availability and limits can vary.",
+          "steps": [
+            "Open Muse in a browser, or use its official mobile app.",
+            "Log in or create an account with your email or mobile number, following the on-screen steps.",
+            "Paste the dinner-decider prompt. You do not need to connect email, shopping, or payment accounts for this exercise."
+          ],
+          "guide": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/"
+        }
+      ],
+      "fallback": {
+        "text": "Use the prepared dinner picker, or ask another app-building assistant to implement the same prompt.",
+        "url": "demos/dinner-picker.html",
+        "label": "Open the dinner picker"
+      }
     }
   ],
   "bonuses": [
@@ -176,7 +347,25 @@
       "sources": [
         "https://claude.com/resources/articles/claude-code-mods",
         "https://code.claude.com/docs/en/plugins/mods/overview"
-      ]
+      ],
+      "access": [
+        {
+          "name": "Claude Code Mods — setup guide",
+          "url": "https://code.claude.com/docs/en/plugins/mods/overview",
+          "needs": "An existing Claude Code setup. Terminal mods require v2.1.287+; Desktop Code sessions require v2.1.286+. Advanced presenter option.",
+          "steps": [
+            "Use the official guide to check your installed version and supported environment.",
+            "In a Claude Code session, paste the mod prompt below.",
+            "Review the generated plugin before loading it; use the guide’s supported installation steps."
+          ],
+          "guide": "https://code.claude.com/docs/en/plugins/mods/overview"
+        }
+      ],
+      "fallback": {
+        "text": "Watch the presenter or read the official walkthrough. The proposed mod below has not been built or rehearsed.",
+        "url": "https://code.claude.com/docs/en/plugins/mods/overview",
+        "label": "Read the walkthrough"
+      }
     },
     {
       "id": "rea",
@@ -195,7 +384,26 @@
           "Source excerpt",
           "demos/rea-source-excerpt.txt"
         ]
-      ]
+      ],
+      "access": [
+        {
+          "name": "Reverse Engineer Anything — official repository",
+          "url": "https://github.com/morluto/rea",
+          "needs": "A coding agent and local Node/npm tooling. This static JavaScript exercise does not need a native decompiler.",
+          "steps": [
+            "Open the repository README and follow its current agent setup instructions.",
+            "Restart your agent after setup so it can see REA.",
+            "Use the prompt only in an environment with the sample package installed, or inspect the prepared excerpt below."
+          ],
+          "guide": "https://github.com/morluto/rea"
+        }
+      ],
+      "fallback": {
+        "text": "Read the saved source excerpt and its limitations; no installation is needed to follow the explanation.",
+        "url": "demos/rea-source-excerpt.txt",
+        "label": "Read the excerpt"
+      }
     }
-  ]
+  ],
+  "access_checked": "October 31, 2026"
 }
